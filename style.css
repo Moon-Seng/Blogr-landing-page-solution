@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+
+
+/* font-family: 'Overpass', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Background */
+
+.background{
+    height: fit-content;
+    background-size: 800px;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-image: url(/images/bg-pattern-intro-desktop.svg);
+
+    
+}
+
+.gradient{
+    background-image: linear-gradient(to right, hsl(13, 100%, 72%) , hsl(353, 100%, 62%));
+}
+
+
+/* NavBar */
+.menu-bar{
+    padding: 4rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    float: right;
+}
+
+.cta-button{
+    display: flex;
+    width: 70%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-items{
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+}
+
+.items-list{
+    position: relative;
+    display: block;
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 7px;
+}
+
+.items-list li{
+    position: absolute;
+    padding: .5rem 2rem;
+    list-style-type: none;
+    transition: 200ms;
+}
+
+.items-list li:hover{
+    font-weight: bold;
+}
+
+.no-bg-button{
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    margin: 0 1rem;
+}
+
+.no-bg-button:active{
+    text-decoration: underline;
+}
+
